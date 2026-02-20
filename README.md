@@ -49,7 +49,7 @@ Sprite icons are referenced via URLs from docs.fivem.net.
 This project does not redistribute FiveM assets directly.
 
 SQL (TABLE)
-Run the following SQL once on your database:
+Run the following SQL-Command or the data.sql file once on your database to create the needed table.
 
 CREATE TABLE IF NOT EXISTS ben_blips (
   id INT AUTO_INCREMENT PRIMARY KEY,
