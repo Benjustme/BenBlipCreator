@@ -129,11 +129,6 @@ RegisterNetEvent('ben_blips:syncDelete', function(id)
   RemoveOne(id)
 end)
 
-RegisterCommand(Config.Command, function()
-  SetNuiFocus(true, true)
-  SendNUIMessage({ action = 'open' })
-end, false)
-
 -- NUI
 RegisterNUICallback('close', function(_, cb)
   SetNuiFocus(false, false)
@@ -197,4 +192,9 @@ end)
 RegisterNUICallback('getLocale', function(_, cb)
   local lang = Config.Locale or 'en'
   cb({ ok = true, locale = lang, dict = Locales[lang] or Locales['en'] })
+end)
+
+RegisterNetEvent('ben_blips:openUI', function()
+  SetNuiFocus(true, true)
+  SendNUIMessage({ action = 'open' })
 end)
