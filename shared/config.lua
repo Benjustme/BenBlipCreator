@@ -1,7 +1,7 @@
 Config = {}
 
 -- Locale: 'de' or 'en'
-Config.Locale = 'de'
+Config.Locale = 'en'
 
 -- Command to open UI
 Config.Command = 'BenBlipCreator'
@@ -19,4 +19,5 @@ Config.AcePerm = 'ben.blips'
 -- JobGrade compare policy:
 -- 'min' => grade >= required
 -- 'exact' => grade == required
+
 Config.JobGradeMode = 'min'
