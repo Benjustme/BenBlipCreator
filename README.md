@@ -1,4 +1,3 @@
-OVERVIEW
 BenBlipCreator is an in-game blip creator for FiveM (ESX Legacy) with an admin NUI.
 You can create, edit, delete and enable/disable blips live — no server restart required.
 Includes a visual Sprite & Color Picker (reference data from the official FiveM docs),
