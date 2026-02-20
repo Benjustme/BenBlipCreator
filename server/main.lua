@@ -259,3 +259,33 @@ CreateThread(function()
   Wait(500)
   PrintBanner()
 end)
+
+local FORCE_DENY_OPEN = false -- nur zum testen, danach wieder false
+
+RegisterCommand(Config.Command, function(source)
+  if source == 0 then
+    print('[BenBlipCreator] This command can only be used ingame.')
+    return
+  end
+ 
+if FORCE_DENY_OPEN then
+  TriggerClientEvent('ox_lib:notify', source, {
+    title = 'BenBlipCreator',
+    description = 'TEST: blocked (simulate non-admin)',
+    type = 'error'
+  })
+  return
+end
+
+  if not IsAdmin(source) then
+    -- optional: notify (ox_lib)
+    TriggerClientEvent('ox_lib:notify', source, {
+      title = 'BenBlipCreator',
+      description = 'No permission.',
+      type = 'error'
+    })
+    return
+  end
+
+  TriggerClientEvent('ben_blips:openUI', source)
+end, false)
