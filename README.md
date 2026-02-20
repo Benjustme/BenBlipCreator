@@ -72,11 +72,4 @@ CREATE TABLE IF NOT EXISTS ben_blips (
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-LICENSE
-This project is licensed under: GNU GPL v3.0 or later (GPL-3.0-or-later)
-- You may use it for free, modify it, and keep private changes private.
-- If you publish or redistribute it, it must remain Open Source under the same license.
-- No warranty / no liability.
-
 Copyright (C) 2026 benjustme
-GPL-3.0-or-later — https://www.gnu.org/licenses/
