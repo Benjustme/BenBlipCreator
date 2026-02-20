@@ -1,9 +1,3 @@
-============================================================
-README_EN.txt
-BenBlipCreator (ESX Legacy) — Ingame Blip Creator (NUI)
-Free for all • Open Source • GPL-3.0-or-later
-============================================================
-
 OVERVIEW
 BenBlipCreator is an in-game blip creator for FiveM (ESX Legacy) with an admin NUI.
 You can create, edit, delete and enable/disable blips live — no server restart required.
@@ -87,4 +81,3 @@ This project is licensed under: GNU GPL v3.0 or later (GPL-3.0-or-later)
 
 Copyright (C) 2026 benjustme
 GPL-3.0-or-later — https://www.gnu.org/licenses/
-============================================================
